@@ -7,9 +7,38 @@
 			body { margin: 0; 
 			       overflow: hidden
 				}
+
+			#controls {
+				position: fixed;
+				bottom: 10px;
+				left: 10px;
+				display: flex;
+				flex-direction: row;
+			}
+
+			.control-button {
+				width: 50px;
+				height: 50px;
+				margin-right: 10px;
+				font-size: 18px;
+				text-align: center;
+				cursor: pointer;
+				background-color: #ddd;
+				border: 1px solid #888;
+				border-radius: 5px;
+				user-select: none;
+			}
 		</style>
 	</head>
 	<body>
+
+		<div id="controls">
+			<div class="control-button" id="btnUp">W</div>
+			<div class="control-button" id="btnLeft">A</div>
+			<div class="control-button" id="btnDown">S</div>
+			<div class="control-button" id="btnRight">D</div>
+		</div>
+
 		<script type="importmap">
   			{
     			"imports": {
